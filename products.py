@@ -15,6 +15,9 @@ for p in products:
 	print(p[0]) #小清單第0格
 	print(p[0], '的價格是:', p[1])
 
+with open('products.csv', 'w') as f:
+	for p in products:
+		f.write(p[0] + ',' + p[1] + '\n' ) #','做不同型別的區隔, '\n'換行
 
 #	products[0][0]
 
