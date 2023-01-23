@@ -1,6 +1,7 @@
-products = []
-# 檢查載入的檔案
 import os #operation system 作業系統模組
+
+# 讀取檔案，檢查載入的檔案
+products = []
 if os.path.isfile('products.csv'): #檢查檔案是否存在
 	print('yaeh')
 	with open('products.csv', 'r', encoding = 'utf-8') as f:
